@@ -3,12 +3,13 @@
   <div class="container">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent justify-content-between">
-      <div class="logo-wrapper order-1">
-        <a class="site-logo" href="{{ site.BaseURL | relLangURL }}"><img class="icon"
-            src="{{ `images/g.png` | absURL }}"><img class="site" src="{{ `images/gethugothemes.png` | absURL }}"></a>
-        <span class="logo-devider"></span>
-        <a class="docs-logo" href="{{ site.BaseURL | relLangURL }}"><img class="docs"
-            src="{{ `images/docs.png` | absURL }}" alt="{{ site.Title }}"></a>
+      <div class="order-1">
+        <a href="{{ site.BaseURL | relLangURL }}">
+          {{ if site.Params.logo_desktop }}
+          <img class="img-fluid d-lg-block d-none" src="{{ site.Params.logo_desktop | absURL }}">
+          <img class="img-fluid d-lg-none" src="{{ site.Params.logo_mobile | absURL }}">
+          {{ else }}{{.Title}}{{end}}
+        </a>
       </div>
 
       {{if not .IsHome }}
