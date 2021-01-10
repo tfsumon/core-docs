@@ -84,7 +84,7 @@ a:hover {
 }
 
 .border-default {
-  border-color: $border-color;
+  border-color: $border-color !important;
 }
 
 /* overlay */
@@ -105,11 +105,11 @@ a:hover {
 }
 
 .outline-0 {
-  outline: 0;
+  outline: 0 !important;
 }
 
 .rounded {
-  border-radius: 12px;
+  border-radius: 12px !important;
 }
 
 .shadow {
@@ -117,19 +117,19 @@ a:hover {
 }
 
 .d-unset {
-  display: unset;
+  display: unset !important;
 }
 
 .bg-primary {
-  background: $primary-color;
+  background: $primary-color !important;
 }
 
 .text-primary {
-  color: $primary-color;
+  color: $primary-color !important;
 }
 
 .text-light {
-  color: $text-color-light;
+  color: $text-color-light !important;
 }
 
 iframe{
@@ -137,7 +137,7 @@ iframe{
 }
 
 .font-weight-medium {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .top-0 {
@@ -156,6 +156,6 @@ code{
 }
 
 .badge-primary {
-  color: $white;
-  background-color: $primary-color;
+  color: $white !important;
+  background-color: $primary-color !important;
 }

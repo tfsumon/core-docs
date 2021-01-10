@@ -10,11 +10,10 @@
       </div>
       <div class="col-lg-4 text-center mb-4 mb-lg-0">
         <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
-          {{ if site.Params.logo }}
-          <img class="img-fluid" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" width="400px">
-          {{ else }}
-          {{ site.Title }}
-          {{ end }}</a>
+          {{ if site.Params.logo_desktop }}
+          <img class="img-fluid" src="{{ site.Params.logo_desktop | absURL }}" alt="{{ site.Title }}" width="{{site.Params.logo_desktop_width}}">
+          {{ else }}{{ site.Title }}{{ end }}
+        </a>
       </div>
       <div class="col-lg-4">
         <ul class="list-inline social-icons text-lg-end text-center">
