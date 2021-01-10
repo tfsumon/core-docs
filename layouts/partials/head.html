@@ -9,8 +9,8 @@
   {{ hugo.Generator }}
 
   {{ "<!--Favicon-->" | safeHTML }}
-  <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
-  <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+	<link rel="shortcut icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon">
+	<link rel="icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon">
 
   {{ "<!-- Stylesheets -->" | safeHTML }}
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,4 +30,7 @@
     <link rel="stylesheet" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" media="screen">
   </noscript>
   {{ end }}
+
+  <!-- custom script -->
+  <script type="text/javascript">{{ site.Params.custom_script | safeHTML }}</script>
 </head>
