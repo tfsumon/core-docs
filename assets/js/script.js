@@ -169,7 +169,6 @@ $(document).on("turbolinks:load", preloader);
 	});
 
 	// table of content
-
 	var containerEl = document.querySelector('#TableOfContents');
 	if (containerEl) {
 		new ScrollMenu('#TableOfContents a', {
