@@ -6,8 +6,8 @@
       <div class="order-1">
         <a href="{{ site.BaseURL | relLangURL }}">
           {{ if site.Params.logo_desktop }}
-          <img class="img-fluid d-lg-block d-none" src="{{ site.Params.logo_desktop | absURL }}">
-          <img class="img-fluid d-lg-none" src="{{ site.Params.logo_mobile | absURL }}">
+          <img width="{{site.Params.logo_desktop_width}}" class="d-lg-block d-none" src="{{ site.Params.logo_desktop | absURL }}">
+          <img width="{{site.Params.logo_mobile_width}}" class="d-lg-none" src="{{ site.Params.logo_mobile | absURL }}">
           {{ else }}{{.Title}}{{end}}
         </a>
       </div>
