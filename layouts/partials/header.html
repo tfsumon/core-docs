@@ -4,7 +4,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent justify-content-between">
       <div class="order-1">
-        <a href="{{ site.BaseURL | relLangURL }}">
+        <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
           {{ if site.Params.logo_desktop }}
           <img width="{{site.Params.logo_desktop_width}}" class="d-sm-block d-none" src="{{ site.Params.logo_desktop | absURL }}">
           <img width="{{site.Params.logo_mobile_width}}" class="d-sm-none" src="{{ site.Params.logo_mobile | absURL }}">
