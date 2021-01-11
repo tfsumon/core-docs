@@ -20,16 +20,6 @@
     as="style" media="screen"
     onload="this.rel='stylesheet'">
   {{- end }}
-  {{ with partialCached "func/getStylesheet.html" . -}}
-  <link
-    rel="preload" href="{{ .Permalink }}"
-    integrity="{{ .Data.Integrity }}"
-    as="style" media="screen"
-    onload="this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" media="screen">
-  </noscript>
-  {{ end }}
 
   <!-- custom script -->
   {{ site.Params.custom_script | safeHTML }}
