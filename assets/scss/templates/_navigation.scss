@@ -27,6 +27,10 @@
 
   .navbar {
     padding: 15px 0;
+    &-brand{
+      display: block;
+      margin-right: 0 !important;
+    }
   }
 
   &.nav-bg {
