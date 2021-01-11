@@ -3,7 +3,7 @@
 
   &.home-nav {
     transition: unset;
-    top: 0;
+    top: 0 !important;
 
     &.nav-bg-home {
       @include desktop {
@@ -176,6 +176,6 @@
   }
 
   .d-none {
-    display: block;
+    display: block !important;
   }
 }
