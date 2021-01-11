@@ -33,7 +33,7 @@ $(document).on("turbolinks:load", preloader);
 		$('.masonry-wrapper').masonry({
 			columnWidth: 1
 		});
-	}, 1000);
+	}, 1500);
 
 	// Get Parameters from some url
 	var getUrlParameter = function getUrlParameter(sPageURL) {
