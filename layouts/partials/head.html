@@ -20,11 +20,16 @@
   <link rel="preload" href="{{ .link | absURL }}" as="style" media="screen" onload="this.rel='stylesheet'">
   {{- end }}
 
-  {{ $styles := resources.Get "scss/theme.scss" | toCSS | postCSS }}
-  <link rel="preload" href="{{ $styles.Permalink }}" integrity="{{ .Data.Integrity }}" as="style" media="screen" onload="this.rel='stylesheet'">
+  {{ with partialCached "func/getStylesheet.html" . -}}
+  <link
+    rel="preload" href="{{ .Permalink }}"
+    integrity="{{ .Data.Integrity }}"
+    as="style" media="screen"
+    onload="this.rel='stylesheet'">
   <noscript>
-    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ .Data.Integrity }}" media="screen">
+    <link rel="stylesheet" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" media="screen">
   </noscript>
+  {{ end }}
 
   <!-- custom script -->
   {{ site.Params.custom_script | safeHTML }}
