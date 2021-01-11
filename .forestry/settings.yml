@@ -18,18 +18,20 @@ sections:
   exclude: "*.md"
   templates:
   - docs
-- type: document
-  path: config.toml
+- type: directory
+  path: config
   label: Configuration
-upload_dir: static/uploads
-public_path: "/uploads"
+  create: all
+  match: "**/*"
+upload_dir: static/images
+public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_env:
   - HUGO_ENV=staging
-  - HUGO_VERSION=0.71.1
+  - HUGO_VERSION=0.79.1
   preview_output_directory: public
   preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
