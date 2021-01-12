@@ -1,0 +1,61 @@
+{
+  "name": "@themefisher/core-docs",
+  "description": "Core documentation setup for ThemeFisher/GetHugoThemes",
+  "version": "0.0.0",
+  "author": {
+    "name": "Mehedi Sharif Titas",
+    "web": "https://gethugothemes.com"
+  },
+  "browserslist": [
+    "extends @dnb-hugo/browserslist-config"
+  ],
+  "bugs": {
+    "url": "https://github.com/themefisher/core-docs/issues"
+  },
+  "devDependencies": {
+    "@dnb-hugo/browserslist-config": "github:dnb-hugo/browserslist-config",
+    "@dnb-hugo/remark-preset-lint": "github:dnb-hugo/remark-preset-lint",
+    "@dnb-hugo/standard-version-config": "github:dnb-hugo/standard-version-config",
+    "@dnb-hugo/stylelint-config": "github:dnb-hugo/stylelint-config",
+    "standard-version": "9.1.0",
+    "stylelint": "13.8.0"
+  },
+  "homepage": "https://github.com/themefisher/core-docs#readme",
+  "keywords": [
+    "hugo",
+    "hugo-documentation",
+    "hugo-site",
+    "hugo-theme"
+  ],
+  "license": "UNLICENSED",
+  "maintainers": [
+    {
+      "name": "Somrat Sorkar",
+      "web": "https://somrat.netlify.app"
+    },
+    {
+      "name": "Patrick Kollitsch",
+      "email": "patrick@davids-neighbour.com",
+      "web": "https://davids-neighbour.com"
+    }
+  ],
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themefisher/core-docs.git"
+  },
+  "scripts": {
+    "hugo": "hugo --i18n-warnings --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --enableGitInfo --log true --logFile hugo.log --verbose",
+    "hugo-update": "hugo mod get -u ./... && hugo mod tidy",
+    "lint": "npm run lint:style",
+    "lint:style": "stylelint assets/scss",
+    "lint:fix": "stylelint assets/scss --fix",
+    "release": "standard-version --release-as patch -a -t \"v\" && ./bin/release-hook-postrelease.sh",
+    "release-major": "standard-version --release-as major -a -t \"v\" && ./bin/release-hook-postrelease.sh",
+    "release-next": "standard-version --release-as minor -a -t \"v\" && ./bin/release-hook-postrelease.sh",
+    "serve": "hugo server --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log --verbose"
+  },
+  "stylelint": {
+    "extends": "@dnb-hugo/stylelint-config"
+  }
+}
