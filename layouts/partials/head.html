@@ -20,7 +20,7 @@
     as="style" media="screen"
     onload="this.rel='stylesheet'">
   {{- end }}
-  {{ with partialCached "func/getStylesheet.html" . -}}
+  {{ with partialCached "head/stylesheet.html" . -}}
   <link
     rel="preload" href="{{ .Permalink }}"
     integrity="{{ .Data.Integrity }}"
