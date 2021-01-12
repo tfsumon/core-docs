@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ with site.LanguageCode | default "en-US" }}{{ . }}{{ end }}">
+<html lang="{{ site.LanguageCode | default `en-US` }}">
 {{- partial "head.html" . -}}
 
 <body>
-	{{- partialCached "preloader.html" . -}}
 	{{- partial "header.html" . -}}
 	{{- block "main" . }}{{- end }}
 	{{- partialCached "footer.html" . -}}
