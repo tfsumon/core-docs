@@ -15,12 +15,6 @@
   {{ "<!-- Stylesheets -->" | safeHTML }}
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
-  {{ range site.Params.plugins.css -}}
-  <link
-    rel="preload" href="{{ .link | absURL }}"
-    as="style" media="screen"
-    onload="this.rel='stylesheet'">
-  {{- end }}
   {{ with partialCached "head/stylesheet.html" . -}}
   <link
     rel="preload" href="{{ .Permalink }}"
@@ -30,6 +24,13 @@
   <noscript>
     <link rel="stylesheet" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" media="screen">
   </noscript>
+  {{ end }}
+  {{/* internal javascript integration */}}
+  {{ with partialCached "footer/javascript.html" . }}
+  <script
+    src="{{.RelPermalink}}" integrity="{{ .Data.Integrity }}"
+    crossorigin="anonymous" async defer
+    type="text/javascript"></script>
   {{ end }}
 
   <!-- custom script -->

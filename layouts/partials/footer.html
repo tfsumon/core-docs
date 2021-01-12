@@ -28,11 +28,3 @@
     </div>
   </div>
 </footer>
-
-{{/* internal javascript integration */}}
-{{ with partialCached "footer/javascript.html" . }}
-<script
-  src="{{.RelPermalink}}" integrity="{{ .Data.Integrity }}"
-  crossorigin="anonymous" async defer
-  type="text/javascript"></script>
-{{ end }}
