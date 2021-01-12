@@ -29,21 +29,10 @@
   </div>
 </footer>
 
-<!-- get search baseURL -->
-<script type="text/javascript">
-  var indexURL = {{ "index.json" | absLangURL }};
-  {{ if site.IsMultiLingual }}
-  var baseurl = "{{site.BaseURL}}{{site.LanguagePrefix}}";
-  {{ else }}
-  var baseurl = "{{site.BaseURL}}";
-  {{ end }}
-</script>
-
-<!-- JS Plugins -->
-{{ range site.Params.plugins.js}}
-<script src="{{ .link | absURL }}"></script>
+{{/* internal javascript integration */}}
+{{ with partialCached "footer/javascript.html" . }}
+<script
+  src="{{.RelPermalink}}" integrity="{{ .Data.Integrity }}"
+  crossorigin="anonymous" async defer
+  type="text/javascript"></script>
 {{ end }}
-
-<!-- Main Script -->
-{{ $script := resources.Get "js/script.js" | minify }}
-<script src="{{ $script.Permalink }}"></script>
