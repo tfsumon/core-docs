@@ -1,3 +1,3 @@
 #!/bin/bash
 
-#git push --follow-tags origin main
+git push --follow-tags origin master
