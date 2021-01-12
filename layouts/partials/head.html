@@ -26,7 +26,7 @@
   </noscript>
   {{ end }}
   {{/* internal javascript integration */}}
-  {{ with partialCached "footer/javascript.html" . }}
+  {{ with partialCached "head/javascript.html" . }}
   <script
     src="{{.RelPermalink}}" integrity="{{ .Data.Integrity }}"
     crossorigin="anonymous" async defer
