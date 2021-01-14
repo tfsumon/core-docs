@@ -166,8 +166,8 @@
 	if (containerEl) {
 		new ScrollMenu('#TableOfContents a', {
 			duration: 400,
-			activeOffset: -110,
-			scrollOffset: -115,
+			activeOffset: -10,
+			scrollOffset: -15,
 		})
 	}
 
