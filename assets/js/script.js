@@ -167,7 +167,7 @@
 		new ScrollMenu('#TableOfContents a', {
 			duration: 400,
 			activeOffset: -10,
-			scrollOffset: -100,
+			scrollOffset: 95,
 		})
 	}
 
