@@ -22,14 +22,14 @@
         {{ with site.Params.navigation_button_bordered }}
         {{ if .enable }}
         {{ "<!-- get start btn -->" | safeHTML }}
-        <a href="{{ .link | absURL }}" {{.attribute | safeHTMLAttr}} class="btn btn-sm btn-outline-primary me-3">{{ .label }}</a>
+        <a {{with .link}}href="{{ . | absURL }}"{{end}} {{.attribute | safeHTMLAttr}} class="btn btn-sm btn-outline-primary me-3">{{ .label }}</a>
         {{ end }}
         {{ end }}
 
         {{ with site.Params.navigation_button_solid }}
         {{ if .enable }}
         {{ "<!-- get start btn -->" | safeHTML }}
-        <a href="{{ .link | absURL }}" {{.attribute | safeHTMLAttr}} class="btn btn-sm btn-primary">{{ .label }}</a>
+        <a {{with .link}}href="{{ . | absURL }}"{{end}} {{.attribute | safeHTMLAttr}} class="btn btn-sm btn-primary">{{ .label }}</a>
         {{ end }}
         {{ end }}
       </div>
