@@ -19,15 +19,18 @@
       </form>
       {{ end }}
       <div class="d-flex order-2 order-lg-3">
-        {{ if site.Params.navigation_button_bordered.enable }}
+        {{ with site.Params.navigation_button_bordered }}
+        {{ if .enable }}
         {{ "<!-- get start btn -->" | safeHTML }}
-        <a href="javascript:void(0);" onclick="Beacon('open')" class="btn btn-sm btn-outline-primary me-3">{{ site.Params.navigation_button_bordered.label }}</a>
+        <a href="{{ .link | absURL }}" {{.attribute | safeHTMLAttr}} class="btn btn-sm btn-outline-primary me-3">{{ .label }}</a>
+        {{ end }}
         {{ end }}
 
-        {{ if site.Params.navigation_button_solid.enable }}
+        {{ with site.Params.navigation_button_solid }}
+        {{ if .enable }}
         {{ "<!-- get start btn -->" | safeHTML }}
-        <a href="{{ site.Params.navigation_button_solid.link | absURL }}"
-          class="btn btn-sm btn-primary">{{ site.Params.navigation_button_solid.label }}</a>
+        <a href="{{ .link | absURL }}" {{.attribute | safeHTMLAttr}} class="btn btn-sm btn-primary">{{ .label }}</a>
+        {{ end }}
         {{ end }}
       </div>
     </nav>

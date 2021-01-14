@@ -85,7 +85,7 @@
         <p>{{ .content | markdownify }}</p>
         {{ with .button }}
         {{ if .enable }}
-        <a href="javascript:void(0);" onclick="Beacon('open')" class="btn btn-primary">{{ .label }}</a>
+        <a href="{{ .link | absURL }}" {{.attribute | safeHTMLAttr}} class="btn btn-primary">{{ .label }}</a>
         {{ end }}
         {{ end }}
       </div>
