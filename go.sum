@@ -1,7 +1,7 @@
-github.com/dnb-hugo/components/functions v1.0.8 h1:DeZFCRbCS/OwnKc0rtKLabDtN+f+ONUO8PdfLXUTYOY=
-github.com/dnb-hugo/components/functions v1.0.8/go.mod h1:D1wuewBIRi/K+JS40raRu4iPYReMNYguOF/vXJ7Jv2c=
-github.com/dnb-hugo/debugprint v1.0.4 h1:2Xtki6BbOEcotrpD3SMR5nkVoVLHOSW5J1NMCXt0uQk=
-github.com/dnb-hugo/debugprint v1.0.4/go.mod h1:YMvTiP34ADcKHOtCpjeIuzfDyXrh0mSKvfjVt/WXpLM=
+github.com/dnb-hugo/components/functions v1.0.9 h1:66jbCp0TPCxPsRiNpeqxBBbbj7eCLPcvFVHwTUAYDZQ=
+github.com/dnb-hugo/components/functions v1.0.9/go.mod h1:D1wuewBIRi/K+JS40raRu4iPYReMNYguOF/vXJ7Jv2c=
+github.com/dnb-hugo/debugprint v1.0.5 h1:XFaHmXyx6XOj14lfbE8obMWHKIvXlHepgLEq+A1ccvc=
+github.com/dnb-hugo/debugprint v1.0.5/go.mod h1:YMvTiP34ADcKHOtCpjeIuzfDyXrh0mSKvfjVt/WXpLM=
 github.com/dnb-hugo/libraries/bootstrap5 v1.2.0 h1:bfQ//pGI71fGda7Mxph744Z8+cm8fbK7yVhpgsPA8VQ=
 github.com/dnb-hugo/libraries/bootstrap5 v1.2.0/go.mod h1:f1PHdrXdCZgkLcbuiTQ9ml8YGxoLw7VWkAapiZoeHtg=
 github.com/dnb-hugo/libraries/popper.js v1.1.2 h1:f2E9px36dUdjaSt8TwJpsSOkevOKtV2bkbXgCKWk7sI=
