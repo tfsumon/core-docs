@@ -163,15 +163,17 @@
 
 .pagination {
   margin-top: 50px;
-
-  .btn-next{
-    margin-left: 15px;
-    text-align: left;
+  &-btn{
     border: 1px solid $border-color;
     display: inline-block;
     padding: 10px;
     width: 100%;
     color: $text-color;
+    &:hover{
+      color: $primary-color;
+      border-color: $primary-color;
+    }
+    
     small{
       display: block;
       color: $primary-color;
@@ -186,27 +188,14 @@
       }
     }
   }
+
+  .btn-next{
+    margin-left: 15px;
+    text-align: left;
+  }
   .btn-prev{
     margin-right: 15px;
     text-align: right;
-    border: 1px solid $border-color;
-    display: inline-block;
-    padding: 10px;
-    width: 100%;
-    color: $text-color;
-    small{
-      display: block;
-      color: $primary-color;
-      i{
-        font-size: 10px;
-        margin-right: 5px;
-      }
-    }
-    span{
-      @include tablet {
-        display: none;
-      }
-    }
   }
 }
 

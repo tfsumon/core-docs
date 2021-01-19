@@ -56,10 +56,10 @@
             {{ end }}
 
             {{with ($.Scratch.Get "prevPage")}}
-            <a href="{{.Permalink }}" class="btn-prev"><small><i class="ti-arrow-left"></i>Prev</small><span>{{.Title}}</span></a>
+            <a href="{{.Permalink }}" class="pagination-btn btn-prev"><small><i class="ti-arrow-left"></i>Prev</small><span>{{.Title}}</span></a>
             {{end}}
             {{with ($.Scratch.Get "nextPage")}}
-            <a href="{{.Permalink }}" class="btn-next"><small>Next<i class="ti-arrow-right"></i></small><span>{{.Title}}</span></a>
+            <a href="{{.Permalink }}" class="pagination-btn btn-next"><small>Next<i class="ti-arrow-right"></i></small><span>{{.Title}}</span></a>
             {{end}}
           </nav>
 
