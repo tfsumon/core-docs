@@ -58,8 +58,8 @@
             {{with ($.Scratch.Get "prevPage")}}
             <a href="{{.Permalink }}" class="pagination-btn btn-prev">
               <i class="ti-arrow-left"></i>
-              <span class="d-block d-md-none">Prev</span>
-              <div class="d-none d-md-block">
+              <span class="d-block d-lg-none">Prev</span>
+              <div class="d-none d-lg-block">
                 <small>Prev</small>
                 <span>{{.Title}}</span>
               </div>
@@ -67,11 +67,11 @@
             {{end}}
             {{with ($.Scratch.Get "nextPage")}}
             <a href="{{.Permalink }}" class="pagination-btn btn-next">
-              <div class="d-none d-md-block">
+              <div class="d-none d-lg-block">
                 <small>Next</small>
                 <span>{{.Title}}</span>
               </div>
-              <span class="d-block d-md-none">Next</span>
+              <span class="d-block d-lg-none">Next</span>
               <i class="ti-arrow-right"></i>
             </a>
             {{end}}
