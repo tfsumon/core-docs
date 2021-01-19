@@ -161,46 +161,43 @@
 
 /* /sidenav */
 
+// pagination
 .pagination {
   margin-top: 50px;
   &-btn{
     border: 1px solid $border-color;
-    display: inline-block;
+    display: inline-flex;
     padding: 10px;
     width: 100%;
     color: $text-color;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
     &:hover{
       color: $primary-color;
       border-color: $primary-color;
+      i{
+        color: $primary-color;
+        transition: inherit;
+      }
     }
-    
     small{
       display: block;
       color: $primary-color;
-      i{
-        font-size: 10px;
-      }
     }
-    span{
-      @include tablet {
-        display: none;
-      }
+    i{
+      font-size: 30px;
+      color: $border-color;
     }
   }
 
   .btn-next{
     margin-left: 15px;
     text-align: left;
-    i{
-      margin-left: 5px;
-    }
   }
   .btn-prev{
     margin-right: 15px;
     text-align: right;
-    i{
-      margin-right: 5px;
-    }
   }
 }
 
