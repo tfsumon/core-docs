@@ -163,16 +163,50 @@
 
 .pagination {
   margin-top: 50px;
-  justify-content: space-between;
 
-  a {
-    color: $primary-color;
-    font-size: 18px;
-    font-weight: 500;
+  .btn-next{
+    margin-left: 15px;
+    text-align: left;
+    border: 1px solid $border-color;
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    color: $text-color;
+    small{
+      display: block;
+      color: $primary-color;
+      i{
+        font-size: 10px;
+        margin-left: 5px;
+      }
+    }
+    span{
+      @include tablet {
+        display: none;
+      }
+    }
   }
-
-  i {
-    line-height: 1.6;
+  .btn-prev{
+    margin-right: 15px;
+    text-align: right;
+    border: 1px solid $border-color;
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    color: $text-color;
+    small{
+      display: block;
+      color: $primary-color;
+      i{
+        font-size: 10px;
+        margin-right: 5px;
+      }
+    }
+    span{
+      @include tablet {
+        display: none;
+      }
+    }
   }
 }
 
