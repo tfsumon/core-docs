@@ -58,7 +58,9 @@ Example:
 {{< contentblock "blockname" "SEARCH1:replace1,SEARCH2:replace2" >}}
 ```
 
-This will replace all occurences of `SEARCH1` in the block with `replace1` and `SEARCH2` with `replace`. 
+This will replace all occurences of `SEARCH1` in the block with `replace1` and `SEARCH2` with `replace`.
+
+NOTE: Headers within content blocks will NOT appear in `.TableOfContents`. This is a limitation of Hugo that will NOT change.
 
 ### {{< contentblocklist >}}
 
@@ -73,6 +75,8 @@ It expects two or more unnamed parameters.
 The first parameter describes the subpath of `content/contentblocks` that the block is located in. If it contains a path then it MUST end with a slash. If the blocks are located inside of `content/contentblocks` then leave this parameter empty (`""`).
 
 The second and any later parameter is the name of the content block to load from the configured directory.
+
+NOTE: Headers within content blocks will NOT appear in `.TableOfContents`. This is a limitation of Hugo that will NOT change.
 
 ### {{< faq >}}
 
