@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+  {{ $feedback:= partial "feedback.html" . }}
+  {{ .Scratch.Set "feedback" $feedback }}
+
+  <section class="pt-5">
+    <div class="container shadow section-sm rounded">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 d-none d-md-block">
+          {{ .TableOfContents }}
+        </div>
+        <div class="col-md-8">
+          <div class="px-lg-5 px-4">
+            <h1 class="mb-4 font-weight-medium">{{ .Title }}</h1>
+            <div class="content">
+              {{.Content}}
+            </div>
+            {{ if site.Params.edit_page_url }}
+              {{ $File := .File }}
+              {{ with $File }}
+                <div class="border-top pt-3 mt-5">
+                  <a href="{{ site.Params.edit_page_url }}{{ replace $File.Dir `\` `/` }}{{ $File.LogicalName }}"
+                     target="blank">
+                    <i class="ti-github me-2 align-middle"></i> <small>Improve this page on Github</small>
+                  </a>&nbsp;&mdash;&nbsp;<small>Last updated:&nbsp; {{ $.Lastmod.Format "Mon, Jan 2, 2006" }}</small>
+                </div>
+              {{ end }}
+            {{ end }}
+            {{ .Scratch.Get "feedback" }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{{ end }}
