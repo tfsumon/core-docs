@@ -92,7 +92,7 @@
 	$('.tab-content').find('.tab-pane').each(function (idx, item) {
 		var navTabs = $(this).closest('.code-tabs').find('.nav-tabs'),
 			title = $(this).attr('title');
-		navTabs.append('<li class="nav-item"><a class="nav-link" href="#">' + title + '</a></li>');
+		navTabs.append('<li class="nav-item mb-0 pb-0"><a class="nav-link" href="#">' + title + '</a></li>');
 	});
 
 	$('.code-tabs ul.nav-tabs').each(function () {
