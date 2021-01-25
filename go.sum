@@ -1,5 +1,5 @@
-github.com/dnb-hugo/components/functions v1.0.9 h1:66jbCp0TPCxPsRiNpeqxBBbbj7eCLPcvFVHwTUAYDZQ=
-github.com/dnb-hugo/components/functions v1.0.9/go.mod h1:D1wuewBIRi/K+JS40raRu4iPYReMNYguOF/vXJ7Jv2c=
+github.com/dnb-hugo/components/functions v1.0.10 h1:xArel7xk7Ro6hP6KIjk6icJ0xwqB4taDLdP90XVKsu8=
+github.com/dnb-hugo/components/functions v1.0.10/go.mod h1:D1wuewBIRi/K+JS40raRu4iPYReMNYguOF/vXJ7Jv2c=
 github.com/dnb-hugo/debugprint v1.0.5 h1:XFaHmXyx6XOj14lfbE8obMWHKIvXlHepgLEq+A1ccvc=
 github.com/dnb-hugo/debugprint v1.0.5/go.mod h1:YMvTiP34ADcKHOtCpjeIuzfDyXrh0mSKvfjVt/WXpLM=
 github.com/dnb-hugo/libraries/bootstrap5 v1.2.0 h1:bfQ//pGI71fGda7Mxph744Z8+cm8fbK7yVhpgsPA8VQ=
