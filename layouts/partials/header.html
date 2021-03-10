@@ -12,11 +12,13 @@
         </a>
       </div>
 
-      {{if not .IsHome }}
+      {{ if not .IsHome }}
+      {{ if site.Params.search }}
       <form class="form-inline search-wrapper order-3 order-lg-2" action="{{ `search` | relLangURL }}">
         <input id="search-by" name="s" type="search" class="form-control" placeholder="Search here ...">
         <button class="border-0 bg-white" type="submit"><i class="ti-search"></i></button>
       </form>
+      {{ end }}
       {{ end }}
       <div class="d-flex order-2 order-lg-3">
         {{ with site.Params.navigation_button_bordered }}

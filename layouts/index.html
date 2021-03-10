@@ -8,12 +8,15 @@
         <h1 class="mb-4 display-3">{{ .title | markdownify }}</h1>
         <p class="mb-4">{{ .subtitle | markdownify }}</p>
         {{ end }}
+
+        {{ if site.Params.search }}
         <form class="search-wrapper home-search" action="{{ `search` | relLangURL }}">
           <input id="search-by" name="s" type="search" class="form-control form-control-lg"
             placeholder="Search here ...">
           <button type="submit" class="btn btn-primary">Search</button>
           <button class="border-0 bg-white d-none" type="submit"><i class="ti-search"></i></button>
         </form>
+        {{ end }}
       </div>
       <div class="col-lg-4 d-lg-block d-none">
         <img loading="lazy" src="{{ site.Params.banner.image | absURL }}" alt="illustration" class="img-fluid">
