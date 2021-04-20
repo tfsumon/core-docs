@@ -173,6 +173,10 @@
         border: 0;
       }
     }
+    @include mobile-xs {
+      height: 35px;
+      min-height: 35px !important;
+    }
   }
 
   .btn-primary {

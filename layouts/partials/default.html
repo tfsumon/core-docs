@@ -20,7 +20,7 @@
         <div class="px-lg-5 px-4">
           <h1 class="mb-4 font-weight-medium">{{ .Title }}</h1>
           {{ if .Content }}
-          <div class="content">{{.Content}}</div>
+          <div class="content" id="{{.Title|urlize|lower}}">{{.Content}}</div>
           {{ else }}
           <ul class="list-styled text-start mb-4">
             {{ range .Data.Pages }}
