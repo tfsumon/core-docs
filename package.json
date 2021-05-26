@@ -13,12 +13,10 @@
     "url": "https://github.com/themefisher/core-docs/issues"
   },
   "devDependencies": {
-    "@dnb-hugo/browserslist-config": "github:dnb-hugo/browserslist-config",
-    "@dnb-hugo/remark-preset-lint": "github:dnb-hugo/remark-preset-lint",
-    "@dnb-hugo/standard-version-config": "github:dnb-hugo/standard-version-config",
-    "@dnb-hugo/stylelint-config": "github:dnb-hugo/stylelint-config",
-    "standard-version": "9.1.0",
-    "stylelint": "13.8.0"
+    "@dnb-hugo/browserslist-config": "*",
+    "@dnb-hugo/remark-config": "*",
+    "@dnb-hugo/standard-version-config": "*",
+    "@dnb-hugo/stylelint-config": "*"
   },
   "homepage": "https://github.com/themefisher/core-docs#readme",
   "keywords": [
