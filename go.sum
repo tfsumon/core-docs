@@ -2,8 +2,8 @@ github.com/dnb-hugo/components/functions v1.0.30 h1:S4XJqvSQa9VLUPgMQnJcmE8pKcX8
 github.com/dnb-hugo/components/functions v1.0.30/go.mod h1:tMbnIU5Q/s6RGEsb0dhWPQRYu3W91mZPjNaMMzHcPuA=
 github.com/dnb-hugo/debugprint v1.0.14 h1:q8/sO0slKTdHCUpKQ7ds3CYxW+Quq8OENT6mtUkPlEk=
 github.com/dnb-hugo/debugprint v1.0.14/go.mod h1:YMvTiP34ADcKHOtCpjeIuzfDyXrh0mSKvfjVt/WXpLM=
-github.com/dnb-hugo/libraries/bootstrap5/v2 v2.1.3 h1:da6dZ0Un0N4xJSHTXPZ5NMs0P4WwMDiXPGoou7eIbcM=
-github.com/dnb-hugo/libraries/bootstrap5/v2 v2.1.3/go.mod h1:jxpUlRvKuM4Lbxv26Ztlk4et5fptgfGlDYY265uMY1A=
+github.com/dnb-hugo/libraries/bootstrap5/v2 v2.1.4 h1:bBqJfH6rl2ZQclDjkqcoNEAUDie6L6ho7D4xFOeAr0Q=
+github.com/dnb-hugo/libraries/bootstrap5/v2 v2.1.4/go.mod h1:jxpUlRvKuM4Lbxv26Ztlk4et5fptgfGlDYY265uMY1A=
 github.com/dnb-hugo/libraries/popper.js v1.2.0 h1:vMq5jwR7KvSgZrLuAzWWUM5KB1lVFQYuWOKzH7l/pFY=
 github.com/dnb-hugo/libraries/popper.js v1.2.0/go.mod h1:zkFxlsMAbh2U2dUtRm4wU8841Sp8nlkqrgNQPKBntTY=
 github.com/popperjs/popper-core v2.9.2+incompatible h1:79aegxWU0Efzru0yRC1PViXx/lutzrKZdzGcvge/7SI=
