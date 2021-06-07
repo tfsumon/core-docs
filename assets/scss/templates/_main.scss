@@ -327,6 +327,7 @@ pre {
   border-radius: 6px;
 
   &:focus {
+    color: $text-color-dark;
     box-shadow: none;
     outline: 0;
     border-color: $primary-color;
