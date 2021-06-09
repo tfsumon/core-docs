@@ -4,29 +4,31 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
-  {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+  <meta name="description"
+    content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  {{ with site.Params.author }}
+  <meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
 
   <!-- SEO noindex: used to block pages from appearing on Google -->
-	{{ if .Params.index }}
-  <meta name="robots" content="noarchive" />
+  {{ if .Params.index }}
+  <meta name="robots" content="noarchive">
   {{ else }}
-	<meta name="robots" content="noindex" />
-	{{ end }}
+  <meta name="Googlebot-News" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="robots" content="noimageindex">
+  {{ end }}
 
   <!--Favicon-->
-	<link rel="shortcut icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon">
-	<link rel="icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon">
+  <link rel="icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon">
 
   <!-- Stylesheets -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
   {{ with partialCached "head/stylesheet.html" . -}}
-  <link
-    rel="preload" href="{{ .Permalink }}"
-    integrity="{{ .Data.Integrity }}"
-    as="style" media="screen"
+  <link rel="preload" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" as="style" media="screen"
     onload="this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" media="screen">
@@ -34,9 +36,7 @@
   {{ end }}
   {{/* internal javascript integration */}}
   {{ with partialCached "head/javascript.html" . }}
-  <script
-    src="{{.RelPermalink}}" integrity="{{ .Data.Integrity }}"
-    crossorigin="anonymous" async defer
+  <script src="{{.RelPermalink}}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" async defer
     type="text/javascript"></script>
   {{ end }}
 
