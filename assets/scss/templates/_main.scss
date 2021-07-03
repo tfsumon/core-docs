@@ -325,6 +325,7 @@ pre {
 .form-control {
   border: 1px solid $border-color;
   border-radius: 6px;
+  color: $text-color-dark;
 
   &:focus {
     color: $text-color-dark;
