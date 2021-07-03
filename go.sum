@@ -4,4 +4,3 @@ github.com/dnb-hugo/debugprint v1.0.16 h1:E8ZzrzRkKSFi8UpNpV+jXlimLE2jNZl7R17mFe
 github.com/dnb-hugo/debugprint v1.0.16/go.mod h1:EY2j41W28l+WfseA6ss8Xco9Z82a3XnwQT5ihD44hcU=
 github.com/dnb-hugo/libraries/bootstrap5/v2 v2.1.7 h1:wgIxUK929aCvQzyxZqEhBx670bUx6fE1T5baJ6XFTME=
 github.com/dnb-hugo/libraries/bootstrap5/v2 v2.1.7/go.mod h1:Bdzc3haBNhZ3e29Ob7DKutuyeMI5oW8Oi97smoYf9mI=
-github.com/twbs/bootstrap v5.0.2+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
