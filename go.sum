@@ -1,7 +1,7 @@
-github.com/dnb-hugo/components/functions v1.0.35 h1:85EJSuMPDvx2xqcyfMqRCoinSPJWR/vcJevaSciNSsQ=
-github.com/dnb-hugo/components/functions v1.0.35/go.mod h1:tMbnIU5Q/s6RGEsb0dhWPQRYu3W91mZPjNaMMzHcPuA=
-github.com/dnb-hugo/debugprint v1.0.16 h1:E8ZzrzRkKSFi8UpNpV+jXlimLE2jNZl7R17mFeqSKJc=
-github.com/dnb-hugo/debugprint v1.0.16/go.mod h1:EY2j41W28l+WfseA6ss8Xco9Z82a3XnwQT5ihD44hcU=
-github.com/dnb-hugo/libraries/bootstrap5/v2 v2.1.7 h1:wgIxUK929aCvQzyxZqEhBx670bUx6fE1T5baJ6XFTME=
-github.com/dnb-hugo/libraries/bootstrap5/v2 v2.1.7/go.mod h1:Bdzc3haBNhZ3e29Ob7DKutuyeMI5oW8Oi97smoYf9mI=
+github.com/dnb-org/components/functions v1.1.0 h1:ipusqQsQ6Rwu06daBv8Skz+tiPms5K9rQCeK3dpGTzQ=
+github.com/dnb-org/components/functions v1.1.0/go.mod h1:+GMAcQaK260wZ6ioNPbQY/ruWdBxFxj9PPw7o5p7eu0=
+github.com/dnb-org/debug v1.3.0 h1:w9jTmF/3UHFdyu9nzEmLfhqok2wlV9Ol0E55Wa4yQ9k=
+github.com/dnb-org/debug v1.3.0/go.mod h1:0z/MDK1qgyqHmMM8mSrexsoPSTpJgIsNu3r6nw5zHAU=
+github.com/dnb-org/libraries/bootstrap5/v2 v2.2.0 h1:Z/Q00CFljrLFhNrdmZUdZI8fN4yrrLFRMrou7BS8MVw=
+github.com/dnb-org/libraries/bootstrap5/v2 v2.2.0/go.mod h1:lP8eIO2UP1Lkhm07DGS0py3bH+GytD4x4cnIp8lC3hU=
 github.com/twbs/bootstrap v5.0.2+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
