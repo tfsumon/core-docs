@@ -7,16 +7,16 @@
     "web": "https://gethugothemes.com"
   },
   "browserslist": [
-    "extends @dnb-hugo/browserslist-config"
+    "extends @dnb-org/browserslist-config"
   ],
   "bugs": {
     "url": "https://github.com/themefisher/core-docs/issues"
   },
   "devDependencies": {
-    "@dnb-hugo/browserslist-config": "*",
-    "@dnb-hugo/remark-config": "*",
-    "@dnb-hugo/standard-version-config": "*",
-    "@dnb-hugo/stylelint-config": "*"
+    "@dnb-org/browserslist-config": "*",
+    "@dnb-org/remark-config": "*",
+    "@dnb-org/standard-version-config": "*",
+    "@dnb-org/stylelint-config": "*"
   },
   "homepage": "https://github.com/themefisher/core-docs#readme",
   "keywords": [
@@ -55,7 +55,7 @@
     "serve": "hugo server --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log --verbose"
   },
   "stylelint": {
-    "extends": "@dnb-hugo/stylelint-config"
+    "extends": "@dnb-org/stylelint-config"
   },
   "dependencies": {
     "cssnano": "^5.0.6",
