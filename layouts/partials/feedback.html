@@ -6,15 +6,15 @@
     <p>Your feedback helps us improve our docs.</p>
   </div>
   <div class="col-md-4 col-lg-3 mt-2 mb-4 mb-md-0 text-md-end">
-    <button class="feedback-btn collapsed positive" type="button" data-bs-toggle="collapse" data-bs-target="#positive">
+    <button class="feedback-btn deactive collapsed positive" type="button" data-bs-toggle="collapse" data-bs-target="#positive">
       <i class="ti-thumb-up"></i>
     </button>
-    <button class="feedback-btn collapsed negative" type="button" data-bs-toggle="collapse" data-bs-target="#negative">
+    <button class="feedback-btn deactive collapsed negative" type="button" data-bs-toggle="collapse" data-bs-target="#negative">
       <i class="ti-thumb-down"></i>
     </button>
   </div>
   <div class="col-12">
-    <div id="positive" class="collapse" aria-labelledby="headingOne" data-bs-parent="#feedback">
+    <div id="positive" class="collapse feedback-collapse" aria-labelledby="headingOne" data-bs-parent="#feedback">
       <form name="feedback" method="POST" action="{{site.Params.feedback_action | safeURL}}">
         <input type="text" name="feedback" id="feedback" value="Positive" hidden>
         <input type="text" name="URL" id="URL" value="{{.Permalink}}" hidden>
@@ -24,7 +24,7 @@
       </form>
     </div>
 
-    <div id="negative" class="collapse" aria-labelledby="headingThree" data-bs-parent="#feedback">
+    <div id="negative" class="collapse feedback-collapse" aria-labelledby="headingThree" data-bs-parent="#feedback">
       <form name="feedback" method="POST" action="{{site.Params.feedback_action | safeURL}}">
         <input type="text" name="feedback" id="feedback" value="Negative" hidden>
         <input type="text" name="URL" id="URL" value="{{.Permalink}}" hidden>

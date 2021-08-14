@@ -161,7 +161,7 @@
 		$(this).parent().find('.ti-minus').removeClass('ti-minus').addClass('ti-plus');
 	});
 	// feedback accordion
-	$('.feedback-btn').on('shown.bs.collapse', function () {
+	$('.feedback-collapse').on('shown.bs.collapse', function () {
 		$(this).removeClass('deactive');
 	}).on('hidden.bs.collapse', function () {
 		$(this).addClass('deactive');
