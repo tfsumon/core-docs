@@ -160,6 +160,12 @@
 	}).on('hidden.bs.collapse', function () {
 		$(this).parent().find('.ti-minus').removeClass('ti-minus').addClass('ti-plus');
 	});
+	// feedback accordion
+	$('.feedback-btn').on('shown.bs.collapse', function () {
+		$(this).removeClass('collapsed');
+	}).on('hidden.bs.collapse', function () {
+		$(this).addClass('collapsed');
+	});
 
 	// table of content
 	var containerEl = document.querySelector('#TableOfContents');
