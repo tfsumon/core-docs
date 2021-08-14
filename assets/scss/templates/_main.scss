@@ -641,7 +641,7 @@ textarea.form-control {
       background-color: #00bec4;
       margin-right: 10px;
 
-      &.collapsed {
+      &.deactive {
         color: #00bec4;
         background-color: #00bec427;
       }
@@ -651,7 +651,7 @@ textarea.form-control {
       color: $white;
       background-color: #f9756e;
 
-      &.collapsed {
+      &.deactive {
         color: #f9756e;
         background-color: #f9756e2a;
       }
