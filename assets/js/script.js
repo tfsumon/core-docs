@@ -162,9 +162,9 @@
 	});
 	// feedback accordion
 	$('.feedback-collapse').on('shown.bs.collapse', function () {
-		$(this).removeClass('deactive');
+		$(this).parent().find('.feedback-btn').removeClass('deactive');
 	}).on('hidden.bs.collapse', function () {
-		$(this).addClass('deactive');
+		$(this).parent().find('.feedback-btn').addClass('deactive');
 	});
 
 	// table of content
