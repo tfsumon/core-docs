@@ -33,17 +33,17 @@
             {{ $currentNode := . }}
             {{ template "menu-nextprev" dict "menu" site.Home "currentnode" $currentNode }}
             {{ define "menu-nextprev" }}
-            {{$currentNode := .currentnode }}
+            {{ $currentNode := .currentnode }}
             {{ if ne .menu.Params.hidden true}}
-            {{if hasPrefix $currentNode.Permalink .menu.Permalink }}
+            {{ if hasPrefix $currentNode.Permalink .menu.Permalink }}
             {{ $currentNode.Scratch.Set "NextPageOK" "OK" }}
             {{ $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") }}
-            {{else}}
-            {{if eq ($currentNode.Scratch.Get "NextPageOK") "OK"}}
+            {{ else }}
+            {{ if eq ($currentNode.Scratch.Get "NextPageOK") "OK" }}
             {{ $currentNode.Scratch.Set "NextPageOK" nil }}
             {{ $currentNode.Scratch.Set "nextPage" .menu }}
-            {{end}}
-            {{end}}
+            {{ end }}
+            {{ end }}
             {{ $currentNode.Scratch.Set "prevPageTmp" .menu }}
 
             {{ $currentNode.Scratch.Set "pages" .menu.Pages }}
@@ -51,11 +51,12 @@
 
             {{ range $pages.ByWeight  }}
             {{ template "menu-nextprev" dict "menu" . "currentnode" $currentNode }}
-            {{end}}
+            {{ end }}
             {{ end }}
             {{ end }}
 
             {{with ($.Scratch.Get "prevPage")}}
+            {{ if ne .RelPermalink "/"}}
             <a href="{{.Permalink }}" class="pagination-btn btn-prev">
               <i class="ti-arrow-left"></i>
               <span class="d-block d-lg-none">Prev</span>
@@ -64,6 +65,7 @@
                 <span>{{.Title}}</span>
               </div>
             </a>
+            {{end}}
             {{end}}
             {{with ($.Scratch.Get "nextPage")}}
             <a href="{{.Permalink }}" class="pagination-btn btn-next">
@@ -101,8 +103,8 @@
 {{ define "section-tree-nav" }}
 {{ $showvisitedlinks := .showvisitedlinks }}
 {{ $currentNode := .currentnode }}
-{{with .sect}}
-{{safeHTML .Params.head}}
+{{ with .sect }}
+{{ safeHTML .Params.head }}
 {{ $fileUniqueID := "" }}
 {{ with .File }}{{ $fileUniqueID = .UniqueID }}{{ end }}
 {{ $currentNodeFileUniqueID := "" }}

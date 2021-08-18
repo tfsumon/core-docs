@@ -161,10 +161,9 @@
 		$(this).parent().find('.ti-minus').removeClass('ti-minus').addClass('ti-plus');
 	});
 	// feedback accordion
-	$('.feedback-collapse').on('shown.bs.collapse', function () {
-		$(this).parent().find('.feedback-btn').removeClass('deactive');
-	}).on('hidden.bs.collapse', function () {
-		$(this).parent().find('.feedback-btn').addClass('deactive');
+	$('.feedback-btn').on('click', function () {
+		$(this).removeClass('deactive');
+		$(this).siblings().addClass('deactive');
 	});
 
 	// table of content

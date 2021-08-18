@@ -14,7 +14,7 @@
     </button>
   </div>
   <div class="col-12">
-    <div id="positive" class="collapse feedback-collapse" aria-labelledby="headingOne" data-bs-parent="#feedback">
+    <div id="positive" class="collapse" aria-labelledby="headingOne" data-bs-parent="#feedback">
       <form name="feedback" method="POST" action="{{site.Params.feedback_action | safeURL}}">
         <input type="text" name="feedback" id="feedback" value="Positive" hidden>
         <input type="text" name="URL" id="URL" value="{{.Permalink}}" hidden>
@@ -24,7 +24,7 @@
       </form>
     </div>
 
-    <div id="negative" class="collapse feedback-collapse" aria-labelledby="headingThree" data-bs-parent="#feedback">
+    <div id="negative" class="collapse" aria-labelledby="headingThree" data-bs-parent="#feedback">
       <form name="feedback" method="POST" action="{{site.Params.feedback_action | safeURL}}">
         <input type="text" name="feedback" id="feedback" value="Negative" hidden>
         <input type="text" name="URL" id="URL" value="{{.Permalink}}" hidden>

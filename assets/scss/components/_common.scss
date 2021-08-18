@@ -116,6 +116,10 @@ a:hover {
   box-shadow: 0 15px 60px rgba(62, 62, 62, 0.102) !important;
 }
 
+.shadow-lg {
+  box-shadow: 0 14px 14px rgba(62, 62, 62, 0.2) !important;
+}
+
 .d-unset {
   display: unset !important;
 }
@@ -151,7 +155,10 @@ iframe{
   color: inherit;
 }
 
-code{
+:not(pre) > code {
+  padding: 0.1em 0.4em;
+  border: 1px solid $border-color;
+  border-radius: 4px;
   color: $primary-color;
 }
 
