@@ -407,7 +407,8 @@ textarea.form-control {
 
   img{
     @extend .shadow-lg;
-    margin: 10px 0 20px;
+    margin: 20px 0 25px;
+    border-radius: 5px;
   }
 
   h1{
