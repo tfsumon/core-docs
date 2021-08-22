@@ -14,12 +14,12 @@
 {{ $collection = $collection | append (resources.Get "js/plugins/clipboard/clipboard.min.js") }}
 {{ $collection = $collection | append (resources.Get "js/plugins/search/auto-complete.js") }}
 {{ $collection = $collection | append (resources.Get "js/plugins/scrollmenu/scrollmenu.min.js") }}
+{{ $collection = $collection | append (resources.Get "js/plugins/anchor/anchorjs-link.js") }}
 {{ $collection = $collection | append (resources.Get "js/plugins/search/search.js") }}
 {{ $collection = $collection | append (resources.Get "js/plugins/search/lunr.min.js") }}
 {{ $collection = $collection | append (resources.Get "js/plugins/search/fuse.min.js") }}
 {{ $collection = $collection | append (resources.Get "js/plugins/search/mark.js") }}
 {{ $collection = $collection | append (resources.Get "js/plugins/search/search-page.js") }}
-{{ $collection = $collection | append (resources.Get "js/plugins/turbolinks/turbolinks.js") }}
 
 {{/* add global script */}}
 {{ $collection = $collection | append (resources.Get "js/script.js") }}

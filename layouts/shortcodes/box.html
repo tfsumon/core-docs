@@ -2,7 +2,7 @@
 {{ $link := .Get "link" }}
 {{ $class := .Get "class" }}
 <div class="box{{ with $class }} {{ $class }}{{ else }} mb-3{{ end }}">
-  <div class="h5">
+  <div class="h5 box-title">
     {{ with $link }}<a class="page-scroll" href="{{ . }}">{{ end }}
     {{ $title }}
     {{ with $link }}</a>{{ end }}

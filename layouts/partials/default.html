@@ -3,18 +3,31 @@
   <div class="container shadow section-sm rounded">
     <div class="row">
       <div class="col-lg-3 col-md-4 d-none d-md-block">
-        <ul class="sidenav">
-          {{ $currentNode := . }}
-          {{range site.Home.Sections.ByWeight}}
-          <!-- not render any single page, like contact page. -->
-          {{ $numberOfMainPages := len .Pages }}
-          {{ if eq $numberOfMainPages 0 }}
-          {{ else }}
-          <!-- /not render any single page, like contact page. -->
-          {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode}}
+        <div class="sticky-sidenav">
+          <ul class="sidenav">
+            {{ $currentNode := . }}
+            {{range site.Home.Sections.ByWeight}}
+            <!-- not render any single page, like contact page. -->
+            {{ $numberOfMainPages := len .Pages }}
+            {{ if eq $numberOfMainPages 0 }}
+            {{ else }}
+            <!-- /not render any single page, like contact page. -->
+            {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode}}
+            {{ end }}
+            {{ end }}
+          </ul>
+          <!-- promotion -->
+          {{ with site.Params.promotion }}
+          {{ if .enable }}
+          <div class="card-body border rounded mt-4">
+            <h2 class="h5 mb-3">{{.title | markdownify}}</h2>
+            <p class="mb-4">{{.content | markdownify}}</p>
+            <a href="{{ .button_link | safeURL }}" class="btn btn-sm w-100 btn-outline-primary">{{ .button_label }}</a>
+          </div>
           {{ end }}
           {{ end }}
-        </ul>
+          <!-- /promotion -->
+        </div>
       </div>
       <div class="col-md-8">
         <div class="px-lg-5 px-4">

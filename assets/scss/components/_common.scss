@@ -112,6 +112,10 @@ a:hover {
   border-radius: 12px !important;
 }
 
+.border-primary {
+  border-color: $primary-color !important;
+}
+
 .shadow {
   box-shadow: 0 15px 60px rgba(62, 62, 62, 0.102) !important;
 }
@@ -164,13 +168,76 @@ iframe{
 }
 
 :not(pre) > code {
-  padding: 0.1em 0.4em;
-  border: 1px solid $border-color;
-  border-radius: 4px;
   color: $primary-color;
+  background: darken($color: $light, $amount: 2);
+  padding: 3px 8px;
+  border-radius: 2px;
+  font-size: 90%;
 }
 
 .badge-primary {
   color: $white !important;
   background-color: $primary-color !important;
+}
+
+// preview iframe
+.bws-block {
+  transition: .3s;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 5px 15px 30px rgba(17, 35, 56, 0.1);
+  &:hover {
+    box-shadow: 5px 20px 35px rgba(17, 35, 56, 0.2);
+  }
+  .bws-header {
+    background: #F1F1F1;
+    padding:.25rem .5rem;
+    position: relative;
+    &::before {
+      background: #FFBD2D;
+      border-radius: 50%;
+      content:"";
+      display: inline-block;
+      height: 12px;
+      left: 1.5rem;
+      top: 1px;
+      position: relative;
+      width: 12px;
+      box-shadow: -20px 0 0 #ff5f57, 20px 0 0 #29c940;
+    }
+  }
+  .bws-content {
+    height: 550px;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px #eee;
+    @include desktop-xxl {
+      height: 670px;
+    }
+    @include tablet {
+      height: 725px;
+    }
+    iframe {
+      border: 0;
+      width: 1300px;
+      height: 952px;
+      transform: scale(0.577);
+      transform-origin: 0 0;
+      @include desktop-xxl {
+        transform: scale(0.677);
+        height: 988px;
+      }
+      @include desktop-lg {
+        width: 1056px;
+      }
+      @include desktop {
+        transform: scale(0.653);
+        height: 841px;
+      }
+      @include tablet {
+        transform: scale(1);
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }

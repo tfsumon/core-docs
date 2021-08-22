@@ -19,11 +19,17 @@
   }
 }
 @mixin desktop-lg{
-  @media(max-width:1200px){
+  @media(max-width:1199px){
     @content;
   }
 }
-
-@mixin size($size){
-  width: $size; height: $size;
+@mixin desktop-xl {
+  @media(max-width:1466px) {
+    @content;
+  }
+}
+@mixin desktop-xxl {
+  @media(min-width:1466px) {
+    @content;
+  }
 }
