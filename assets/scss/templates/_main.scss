@@ -73,7 +73,7 @@
 /* sidenav */
 .sticky-sidenav {
   position: sticky;
-  top: 80px;
+  top: 10px;
 }
 
 .sidenav {
@@ -103,30 +103,23 @@
   .parent {
     &>a {
       color: $primary-color;
-      position: relative;
-      margin: 8px 0px 10px 10px;
-      padding: 8px 10px 8px 20px;
-      background-color: rgba($color: $primary-color, $alpha: .05);
-      border-left: 3px solid $primary-color;
-      border-radius: 0 5px 5px 0;
+      margin: 5px 0px;
+      padding: 5px 0;
     }
 
     ul {
       display: block;
       margin-bottom: 10px;
+      border-left: 1px solid $border-color;
 
       a {
-        padding: 5px 10px 5px 15px;
+        padding: 5px 0;
         font-size: 14px;
         font-weight: 400;
       }
 
       li.active>a {
-        background-color: $light;
-        border-radius: 5px;
         color: $primary-color;
-        border-left: 0;
-        margin-left: 0;
       }
     }
   }
@@ -405,8 +398,11 @@ textarea.form-control {
     margin: 20px 0 25px;
     border-radius: 5px;
   }
+  a img{
+    cursor: zoom-in;
+  }
 
-  div {
+  div:not(.bws-block) {
     overflow: visible !important;
   }
 

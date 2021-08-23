@@ -1,7 +1,14 @@
 <div class="bws-block">
-  <div class="bws-header"></div>
+  <div class="bws-header">
+    <div class="bws-actions">
+      {{with .Get "download"}}<a target="blank" href="{{. | safeURL}}">Download</a>{{end}}
+      {{with .Get "demo"}}
+      <a target="blank" title="Full Preview" href="{{. | safeURL}}"><i class="ti-new-window"></i></a>
+      {{ end }}
+    </div>
+  </div>
   <div class="bws-content">
     <iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" loading="lazy"
-      src="{{ .Get 0 | safeURL }}" title="Andromeda"></iframe>
+      src="{{ .Get `demo` | safeURL }}/" title="Andromeda"></iframe>
   </div>
 </div>

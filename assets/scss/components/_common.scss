@@ -16,7 +16,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: $body-color;
   z-index: 9999;
   display: flex;
   align-items: center;
@@ -117,7 +117,7 @@ a:hover {
 }
 
 .shadow {
-  box-shadow: 0 15px 60px rgba(62, 62, 62, 0.102) !important;
+  box-shadow: 0 1px 40px 10px rgba(62, 62, 62, 0.1) !important;
 }
 
 .shadow-lg {
@@ -141,14 +141,14 @@ a:hover {
 }
 
 .highlight {
-  pre{
+  pre {
     padding: 15px 50px 15px 25px !important;
     border-radius: 0 5px 5px 0 !important;
     border-left: 5px solid $primary-color !important;
   }
 }
 
-iframe{
+iframe {
   max-width: 100%;
 }
 
@@ -160,19 +160,21 @@ iframe{
   top: 0;
 }
 
-.mark, mark {
+.mark,
+mark {
   padding: 0;
   background-color: inherit;
   text-decoration: underline;
   color: inherit;
 }
 
-:not(pre) > code {
-  color: $primary-color;
+:not(pre)>code {
+  color: $text-color;
   background: darken($color: $light, $amount: 2);
   padding: 3px 8px;
   border-radius: 2px;
-  font-size: 90%;
+  font-size: 80%;
+  vertical-align: middle;
 }
 
 .badge-primary {
@@ -180,23 +182,50 @@ iframe{
   background-color: $primary-color !important;
 }
 
+// ribbon
+.ribbon {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  span {
+    position: absolute;
+    display: block;
+    width: 130%;
+    padding: 5px 0;
+    background-color: $primary-color;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    color: $white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+    text-transform: uppercase;
+    text-align: center;
+    left: 7px;
+    top: 7px;
+    font-size: 80%;
+    transform: rotate(37deg);
+  }
+}
+
 // preview iframe
 .bws-block {
-  transition: .3s;
   border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 5px 15px 30px rgba(17, 35, 56, 0.1);
-  &:hover {
-    box-shadow: 5px 20px 35px rgba(17, 35, 56, 0.2);
-  }
+  overflow: hidden !important;
+  @extend .shadow;
+  margin-bottom: 30px;
+
   .bws-header {
-    background: #F1F1F1;
-    padding:.25rem .5rem;
+    background: #ececec;
+    padding: .25rem .5rem;
     position: relative;
+    border-radius: 8px 8px 0 0;
+
     &::before {
       background: #FFBD2D;
       border-radius: 50%;
-      content:"";
+      content: "";
       display: inline-block;
       height: 12px;
       left: 1.5rem;
@@ -206,33 +235,64 @@ iframe{
       box-shadow: -20px 0 0 #ff5f57, 20px 0 0 #29c940;
     }
   }
+
+  .bws-actions {
+    float: right;
+    margin-right: 10px;
+
+    a {
+      border: 1px solid #dcdcdc;
+      margin-left: 10px;
+      text-decoration: none;
+      color: $text-color;
+      font-size: 80%;
+      border-radius: 5px;
+      padding: 0 8px;
+      display: inline-block;
+      height: 24px;
+      line-height: 24px;
+
+      &:hover {
+        color: $primary-color;
+        background-color: #dcdcdc;
+      }
+    }
+  }
+
   .bws-content {
-    height: 550px;
+    height: 600px;
     overflow: hidden;
-    box-shadow: inset 0 0 10px #eee;
-    @include desktop-xxl {
-      height: 670px;
+
+    @include desktop-xl {
+      height: 535px;
     }
-    @include tablet {
-      height: 725px;
-    }
+
     iframe {
       border: 0;
-      width: 1300px;
-      height: 952px;
-      transform: scale(0.577);
+      max-width: initial;
+      width: 1270px;
+      height: 1000px;
+      transform: scale(0.6);
       transform-origin: 0 0;
-      @include desktop-xxl {
-        transform: scale(0.677);
-        height: 988px;
+      box-shadow: none !important;
+
+      @include desktop-xl {
+        width: 1200px;
+        transform: scale(.535);
       }
+
       @include desktop-lg {
-        width: 1056px;
+        width: 650px;
+        height: 670px;
+        transform: scale(.8);
       }
+
       @include desktop {
-        transform: scale(0.653);
-        height: 841px;
+        width: 515px;
+        height: 670px;
+        transform: scale(0.8);
       }
+
       @include tablet {
         transform: scale(1);
         width: 100%;

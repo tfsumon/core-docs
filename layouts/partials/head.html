@@ -26,16 +26,15 @@
 
   <!-- Stylesheets -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"> -->
   {{ with partialCached "head/stylesheet.html" . -}}
-  <link rel="preload" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" as="style" media="screen"
-    onload="this.rel='stylesheet'">
+  <link rel="preload" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" as="style" media="screen" onload="this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" media="screen">
   </noscript>
   {{ end }}
   {{/* internal javascript integration */}}
-  {{ with partialCached "head/javascript.html" . }}
+  {{ with partial "head/javascript.html" . }}
   <script src="{{.RelPermalink}}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" async defer
     type="text/javascript"></script>
   {{ end }}
