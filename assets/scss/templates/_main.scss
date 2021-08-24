@@ -395,8 +395,9 @@ textarea.form-control {
 
   img {
     @extend .shadow-lg;
-    margin: 20px 0 25px;
+    margin: 20px 0 25px 20px;
     border-radius: 5px;
+    max-width: calc(100% - 20px);
   }
   a img{
     cursor: zoom-in;
@@ -409,6 +410,7 @@ textarea.form-control {
   iframe {
     @extend .shadow-lg;
     border-radius: 5px;
+    margin: 20px 0 25px 20px;
   }
 
   h1 {
