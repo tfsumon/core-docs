@@ -35,6 +35,9 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="robots" content="noimageindex">
   {{ end }}
+  {{ with site.Params.google_verification }}
+  <meta name="google-site-verification" content="{{ . }}" />
+  {{ end }}
 
   <!--Favicon-->
   <link rel="shortcut icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon">
