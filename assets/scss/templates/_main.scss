@@ -479,7 +479,12 @@ textarea.form-control {
     }
   }
 
-
+  p:empty{
+    display: none;
+  }
+  p code:empty{
+    display: none;
+  }
 
   table {
     width: 100%;
