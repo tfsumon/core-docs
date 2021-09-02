@@ -1,7 +1,7 @@
 {{ "<!-- details page -->" | safeHTML }}
 <section class="pt-5">
-  <div class="container shadow section-sm rounded">
-    <div class="row">
+  <div class="container shadow section-sm pb-4 rounded">
+    <div class="row justify-content-center">
       <div class="col-lg-3 col-md-4 d-none d-md-block">
         <div class="sticky-sidenav">
           <ul class="sidenav">
@@ -95,11 +95,11 @@
           {{ if site.Params.edit_page_url }}
           {{ $File := .File }}
           {{ with $File }}
-          <div class="border-top pt-3 mt-5">
+          <div class="border-top pt-4 mt-5">
             <a href="{{ site.Params.edit_page_url }}{{ replace $File.Dir `\` `/` }}{{ $File.LogicalName }}"
               target="blank">
               <i class="ti-github me-2 align-middle"></i> <small>Improve this page on Github</small>
-            </a>&nbsp;&mdash;&nbsp;<small>Last updated:&nbsp; {{ $.Lastmod.Format "Mon, Jan 2, 2006" }}</small>
+            </a><span class="d-inline-block d-lg-none">&nbsp;&mdash;&nbsp;</span><small class="float-lg-right">Last updated:&nbsp; {{ $.Lastmod.Format "Mon, Jan 2, 2006" }}</small>
           </div>
           {{ end }}
           {{ end }}

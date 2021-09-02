@@ -89,6 +89,13 @@ a:hover {
   }
 }
 
+.float-lg-right{
+  float: right;
+  @include desktop {
+    float: none; 
+  }
+}
+
 .outline-0 {
   outline: 0 !important;
 }
