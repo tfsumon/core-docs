@@ -4,4 +4,6 @@ github.com/dnb-org/debug v1.4.1 h1:jWSRBI1sBkbU7aS8uSc9GHyz0dnRAvrbBs5NgLCGFlI=
 github.com/dnb-org/debug v1.4.1/go.mod h1:0z/MDK1qgyqHmMM8mSrexsoPSTpJgIsNu3r6nw5zHAU=
 github.com/dnb-org/libraries/bootstrap5/v2 v2.2.3 h1:9U1VG4rIxs9Utc74ENhfG9x7XFKn245Qivb/rpLpJCY=
 github.com/dnb-org/libraries/bootstrap5/v2 v2.2.3/go.mod h1:mO1bFzWjYYtqK9KJva99qM+2NFwr9w+Fvo5aJKkZgjk=
+github.com/gethugothemes/hugo-modules/seo-tools/google-tag-manager v0.0.0-20220306092601-a107c8ed9495 h1:z58+LoCNxvVeJod927orh0C7vo/uAd7MUOqJ67b7aHw=
+github.com/gethugothemes/hugo-modules/seo-tools/google-tag-manager v0.0.0-20220306092601-a107c8ed9495/go.mod h1:sgWydo+fBd/iGS87bvQuu33aCnIs86BiihZEjqHyihM=
 github.com/twbs/bootstrap v5.1.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=

@@ -1,7 +1,7 @@
 {
   "name": "@themefisher/core-docs",
   "description": "Core documentation setup for ThemeFisher/GetHugoThemes",
-  "version": "1.0.63",
+  "version": "1.0.64",
   "author": {
     "name": "Mehedi Sharif Titas",
     "web": "https://gethugothemes.com"
@@ -58,9 +58,9 @@
     "extends": "@dnb-org/stylelint-config"
   },
   "dependencies": {
-    "cssnano": "^5.0.10",
+    "cssnano": "^5.1.0",
     "pixrem": "^5.0.0",
-    "postcss-cli": "^9.0.2",
+    "postcss-cli": "^9.1.0",
     "precss": "^4.0.0"
   }
 }
