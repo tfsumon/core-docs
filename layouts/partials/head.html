@@ -57,6 +57,9 @@
   <script src="{{.RelPermalink}}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" async defer
     type="text/javascript"></script>
   {{ end }}
+  
+  <!-- tag manager -->
+  {{ partial "gtm.html" . }}
 
   <!-- custom script -->
   {{ site.Params.custom_script | safeHTML }}

@@ -3,6 +3,9 @@
 {{ partial "head.html" . }}
 
 <body>
+  <!-- tag manager -->
+  {{ partial "gtm-noscript.html" . }}
+
 	{{ partial "header.html" . }}
 	{{ if site.Params.preloader }}
 	<div class="preloader"></div>
