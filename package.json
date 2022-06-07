@@ -7,16 +7,16 @@
     "web": "https://gethugothemes.com"
   },
   "browserslist": [
-    "extends @dnb-org/browserslist-config"
+    "extends @davidsneighbour/browserslist-config"
   ],
   "bugs": {
     "url": "https://github.com/themefisher/core-docs/issues"
   },
   "devDependencies": {
-    "@dnb-org/browserslist-config": "*",
-    "@dnb-org/remark-config": "*",
-    "@dnb-org/standard-version-config": "*",
-    "@dnb-org/stylelint-config": "*"
+    "@davidsneighbour/browserslist-config": "^4.0.11",
+    "@davidsneighbour/remark-config": "*",
+    "@davidsneighbour/standard-version-config": "*",
+    "@davidsneighbour/stylelint-config": "*"
   },
   "homepage": "https://github.com/themefisher/core-docs#readme",
   "keywords": [
@@ -55,10 +55,10 @@
     "serve": "hugo server --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log --verbose"
   },
   "stylelint": {
-    "extends": "@dnb-org/stylelint-config"
+    "extends": "@davidsneighbour/stylelint-config"
   },
   "dependencies": {
-    "cssnano": "^5.1.0",
+    "cssnano": "^5.1.11",
     "pixrem": "^5.0.0",
     "postcss-cli": "^9.1.0",
     "precss": "^4.0.0"
