@@ -1,7 +1,7 @@
 {
   "name": "@themefisher/core-docs",
   "description": "Core documentation setup for ThemeFisher/GetHugoThemes",
-  "version": "1.0.64",
+  "version": "1.0.65",
   "author": {
     "name": "Mehedi Sharif Titas",
     "web": "https://gethugothemes.com"
@@ -49,9 +49,9 @@
     "lint:style": "stylelint assets/scss",
     "lint:fix": "stylelint assets/scss --fix",
     "remark": "remark",
-    "release": "standard-version --release-as patch -a -t \"v\" && ./bin/release-hook-postrelease.sh",
-    "release-major": "standard-version --release-as major -a -t \"v\" && ./bin/release-hook-postrelease.sh",
-    "release-next": "standard-version --release-as minor -a -t \"v\" && ./bin/release-hook-postrelease.sh",
+    "release": "standard-version --release-as patch -a -t \"v\" && ./bin/release/postrelease",
+    "release-major": "standard-version --release-as major -a -t \"v\" && ./bin/release/postrelease",
+    "release-next": "standard-version --release-as minor -a -t \"v\" && ./bin/release/postrelease",
     "serve": "hugo server --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log --verbose"
   },
   "stylelint": {
