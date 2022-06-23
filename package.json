@@ -13,7 +13,7 @@
     "url": "https://github.com/themefisher/core-docs/issues"
   },
   "devDependencies": {
-    "@davidsneighbour/browserslist-config": "^4.0.11",
+    "@davidsneighbour/browserslist-config": "^4.0.12",
     "@davidsneighbour/remark-config": "*",
     "@davidsneighbour/standard-version-config": "*",
     "@davidsneighbour/stylelint-config": "*"
@@ -58,7 +58,7 @@
     "extends": "@davidsneighbour/stylelint-config"
   },
   "dependencies": {
-    "cssnano": "^5.1.11",
+    "cssnano": "^5.1.12",
     "pixrem": "^5.0.0",
     "postcss-cli": "^9.1.0",
     "precss": "^4.0.0"
