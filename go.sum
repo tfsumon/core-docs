@@ -1,7 +1,7 @@
-github.com/davidsneighbour/hugo-debug v1.5.9 h1:3jL5MFqL//uXX7rkBpcgwEqgFZek1t4HMja65YctAhc=
-github.com/davidsneighbour/hugo-debug v1.5.9/go.mod h1:ka0eftoPGqF1B0TUvAIvWOau96Y5XQKKGZ9DCb5NBz4=
-github.com/davidsneighbour/hugo-functions v1.1.1 h1:qas2l+WTohiGRTGecLzlPvaVDUSV1fI8pWEqrCg+VEY=
-github.com/davidsneighbour/hugo-functions v1.1.1/go.mod h1:vcxVzEHYhArEYMR0w+r6h6xwoV6Tkovl/d9fK2n3dQE=
+github.com/davidsneighbour/hugo-debug v1.5.18 h1:elFNOOF3fq29QX/hQjm5dmw3gjRms9fwFmrhvPXp8Ks=
+github.com/davidsneighbour/hugo-debug v1.5.18/go.mod h1:CmaePQn6TcdiP269YMmB0ShEZI47ySDpeWkBV8T2qcU=
+github.com/davidsneighbour/hugo-functions v1.1.2 h1:k+nqsfeF6/Z6yFZtnS+67utrF7jiTUA2bO3TfNIu4yo=
+github.com/davidsneighbour/hugo-functions v1.1.2/go.mod h1:vcxVzEHYhArEYMR0w+r6h6xwoV6Tkovl/d9fK2n3dQE=
 github.com/davidsneighbour/libraries/bootstrap5/v2 v2.2.5 h1:fdVZtv5Py+3wWHA8G0l9eQoOCt/P2WmUzWKLfEAKhs8=
 github.com/davidsneighbour/libraries/bootstrap5/v2 v2.2.5/go.mod h1:KElL4oonXlxa4XtZOfxepQ27IVxk4RdXzXlT+QFxptg=
 github.com/gethugothemes/hugo-modules/seo-tools/google-tag-manager v0.0.0-20220608064808-b0fc1a04ca85 h1:SKU3DANS6bMrOJjyFY/XqXdLJAVULprCDDsw5tXmgXA=
