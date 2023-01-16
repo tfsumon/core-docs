@@ -100,7 +100,7 @@
 
   .sidelist {
     margin-bottom: 5px;
-    ul {
+    &:not(.active) ul {
       display: none;
     }
   }
