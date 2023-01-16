@@ -100,7 +100,7 @@
 
   .sidelist {
     margin-bottom: 5px;
-    &:not(.active) ul {
+    ul {
       display: none;
     }
   }
@@ -114,7 +114,7 @@
     }
 
     ul {
-      display: block;
+      display: block !important;
       margin-bottom: 10px;
       border-left: 1px solid $border-color;
 
@@ -142,7 +142,7 @@
     border-bottom: 0;
 
     .sidelist {
-      display: block;
+      display: block !important;
     }
   }
 }
