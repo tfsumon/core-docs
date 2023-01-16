@@ -44,7 +44,7 @@
   },
   "scripts": {
     "hugo": "hugo --i18n-warnings --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --enableGitInfo --log true --logFile hugo.log --verbose",
-    "hugo-update": "hugo mod get -u ./... && hugo mod tidy",
+    "update": "hugo mod get -u ./... && hugo mod tidy",
     "lint": "npm run lint:style",
     "lint:style": "stylelint assets/scss",
     "lint:fix": "stylelint assets/scss --fix",
