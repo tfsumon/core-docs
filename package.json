@@ -10,7 +10,7 @@
     "extends @davidsneighbour/browserslist-config"
   ],
   "bugs": {
-    "url": "https://github.com/themefisher/core-docs/issues"
+    "url": "https://github.com/teamosis/core-docs/issues"
   },
   "devDependencies": {
     "@davidsneighbour/browserslist-config": "^4.0.12",
@@ -18,7 +18,7 @@
     "@davidsneighbour/standard-version-config": "*",
     "@davidsneighbour/stylelint-config": "*"
   },
-  "homepage": "https://github.com/themefisher/core-docs#readme",
+  "homepage": "https://github.com/teamosis/core-docs#readme",
   "keywords": [
     "hugo",
     "hugo-documentation",
@@ -40,7 +40,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/themefisher/core-docs.git"
+    "url": "git+https://github.com/teamosis/core-docs.git"
   },
   "scripts": {
     "hugo": "hugo --i18n-warnings --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --enableGitInfo --log true --logFile hugo.log --verbose",
