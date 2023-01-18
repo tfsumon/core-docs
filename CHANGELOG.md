@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.69](https://github.com/teamosis/core-docs/compare/v1.0.68...v1.0.69) (2023-01-18)
+
 ### [1.0.68](https://github.com/teamosis/core-docs/compare/v1.0.67...v1.0.68) (2022-07-28)
 
 ### [1.0.67](https://github.com/teamosis/core-docs/compare/v1.0.66...v1.0.67) (2022-06-23)
