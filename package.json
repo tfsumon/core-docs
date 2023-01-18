@@ -6,9 +6,6 @@
     "name": "Mehedi Sharif Titas",
     "web": "https://gethugothemes.com"
   },
-  "browserslist": [
-    "extends @davidsneighbour/browserslist-config"
-  ],
   "bugs": {
     "url": "https://github.com/teamosis/core-docs/issues"
   },
