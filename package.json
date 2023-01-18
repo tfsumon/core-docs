@@ -1,6 +1,6 @@
 {
-  "name": "@themefisher/core-docs",
-  "description": "Core documentation setup for ThemeFisher/GetHugoThemes",
+  "name": "@teamosis/core-docs",
+  "description": "Core documentation setup for ThemeFisher, GetHugoThemes, and More",
   "version": "1.0.68",
   "author": {
     "name": "Mehedi Sharif Titas",
