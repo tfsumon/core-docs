@@ -45,23 +45,9 @@
   "scripts": {
     "hugo": "hugo --i18n-warnings --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --enableGitInfo --log true --logFile hugo.log --verbose",
     "update": "hugo mod get -u ./... && hugo mod tidy",
-    "lint": "npm run lint:style",
-    "lint:style": "stylelint assets/scss",
-    "lint:fix": "stylelint assets/scss --fix",
-    "remark": "remark",
     "release": "standard-version --release-as patch -a -t \"v\" && ./bin/release/postrelease",
     "release-major": "standard-version --release-as major -a -t \"v\" && ./bin/release/postrelease",
     "release-next": "standard-version --release-as minor -a -t \"v\" && ./bin/release/postrelease",
     "serve": "hugo server --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log --verbose"
-  },
-  "stylelint": {
-    "extends": "@davidsneighbour/stylelint-config"
-  },
-  "dependencies": {
-    "cssnano": "^5.1.12",
-    "pixrem": "^5.0.0",
-    "postcss": "^8.4.14",
-    "postcss-cli": "^9.1.0",
-    "precss": "^4.0.0"
   }
 }
