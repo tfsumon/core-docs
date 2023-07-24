@@ -3,6 +3,7 @@
   @extend .rounded;
   transition: 0.2s ease;
   border: 0;
+  color: $text-color-dark;
 
   &-lg {
     .card-body {

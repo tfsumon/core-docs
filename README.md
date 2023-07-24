@@ -2,6 +2,6 @@
 
 Gethugothemes License
 
-Copyright (c) 2020 Gethugothemes
+Copyright (c) Gethugothemes
 
-You can not use this template unless purchase it. product purchase link: https://gethugothemes.com/products/godocs
+You can not use this template unless purchase it. product purchase link: <https://gethugothemes.com/products/godocs>
