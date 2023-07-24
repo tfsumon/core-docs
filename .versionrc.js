@@ -1,2 +1,2 @@
-const defaultStandardVersion = require("@davidsneighbour/config/standard-version");
+const defaultStandardVersion = require("@davidsneighbour/standard-version-config");
 module.exports = defaultStandardVersion;
