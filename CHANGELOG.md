@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.0.74](https://github.com/teamosis/core-docs/compare/v1.0.73...v1.0.74) (2023-07-24)
+
 ## [1.0.73](https://github.com/teamosis/core-docs/compare/v1.0.72...v1.0.73) (2023-07-24)
 
 ## [1.0.72](https://github.com/teamosis/core-docs/compare/v1.0.71...v1.0.72) (2023-07-24)
