@@ -2,49 +2,17 @@
   "name": "@teamosis/core-docs",
   "description": "Core documentation setup for ThemeFisher, GetHugoThemes, and More",
   "version": "1.0.70",
-  "author": {
-    "name": "Mehedi Sharif Titas",
-    "web": "https://gethugothemes.com"
-  },
-  "bugs": {
-    "url": "https://github.com/teamosis/core-docs/issues"
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev": "hugo server --disableFastRender",
+    "build": "hugo --i18n-warnings --templateMetrics --templateMetricsHints --path-warnings",
+    "update": "hugo mod get -u ./... && hugo mod tidy",
+    "release": "commit-and-tag-version --release-as patch -a -t \"v\" && ./bin/release-hook-postrelease.sh",
+    "release-next": "commit-and-tag-version --release-as minor -a -t \"v\" && ./bin/release-hook-postrelease.sh",
+    "release-major": "commit-and-tag-version --release-as major -a -t \"v\" && ./bin/release-hook-postrelease.sh"
   },
   "devDependencies": {
-    "@davidsneighbour/browserslist-config": "^4.0.12",
-    "@davidsneighbour/remark-config": "*",
-    "@davidsneighbour/standard-version-config": "*",
-    "@davidsneighbour/stylelint-config": "*"
-  },
-  "homepage": "https://github.com/teamosis/core-docs#readme",
-  "keywords": [
-    "hugo",
-    "hugo-documentation",
-    "hugo-site",
-    "hugo-theme"
-  ],
-  "license": "UNLICENSED",
-  "maintainers": [
-    {
-      "name": "Somrat Sorkar",
-      "web": "https://somrat.netlify.app"
-    },
-    {
-      "name": "Patrick Kollitsch",
-      "email": "patrick@davids-neighbour.com",
-      "web": "https://davids-neighbour.com"
-    }
-  ],
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/teamosis/core-docs.git"
-  },
-  "scripts": {
-    "hugo": "hugo --i18n-warnings --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --enableGitInfo --log true --logFile hugo.log --verbose",
-    "update": "hugo mod get -u ./... && hugo mod tidy",
-    "release": "standard-version --release-as patch -a -t \"v\" && ./bin/release/postrelease",
-    "release-major": "standard-version --release-as major -a -t \"v\" && ./bin/release/postrelease",
-    "release-next": "standard-version --release-as minor -a -t \"v\" && ./bin/release/postrelease",
-    "serve": "hugo server --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log --verbose"
+    "@davidsneighbour/standard-version-config": "^5.2.25"
   }
 }
