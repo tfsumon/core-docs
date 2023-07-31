@@ -1,5 +1,19 @@
 {{ "<!-- navigation -->" | safeHTML }}
 <header class="navigation {{if .IsHome}}home-nav sticky-top{{end}}">
+  {{ with site.Params.announcement }}
+  {{ if .enable }}
+  <div class="announcement">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="mb-0">{{.content | markdownify}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+  {{ end }}
+  
   <div class="container">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent justify-content-between">

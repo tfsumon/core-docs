@@ -38,9 +38,11 @@ $(window).on('load', function () {
     var height = $('#banner').innerHeight();
     if ($('.navigation').offset().top > height) {
       $('.search-wrapper').addClass('search-sticky');
+      $('.announcement').addClass('d-none');
       $('.navigation').addClass('nav-bg-home');
     } else {
       $('.search-wrapper').removeClass('search-sticky');
+      $('.announcement').removeClass('d-none');
       $('.navigation').removeClass('nav-bg-home');
     };
   });
