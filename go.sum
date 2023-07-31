@@ -1,5 +1,5 @@
-github.com/gethugothemes/hugo-modules/seo-tools/google-tag-manager v0.0.0-20230723035230-6e3f9ed58472 h1:wDntnZH3QvoWm1ug25nBCOiCNXsp9dCXi3mh4BWc/wo=
-github.com/gethugothemes/hugo-modules/seo-tools/google-tag-manager v0.0.0-20230723035230-6e3f9ed58472/go.mod h1:cCq50yd55eFTrpqOfeyOK5X0hU5E7qxsqOD7IzTsgLA=
+github.com/gethugothemes/hugo-modules/seo-tools/google-tag-manager v0.0.0-20230731033118-be0c1c964f76 h1:lP94eW+s4g3b8wbHNFW0tWOq+mwaG5TldvAgDWvSbFo=
+github.com/gethugothemes/hugo-modules/seo-tools/google-tag-manager v0.0.0-20230731033118-be0c1c964f76/go.mod h1:cCq50yd55eFTrpqOfeyOK5X0hU5E7qxsqOD7IzTsgLA=
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20003 h1:pt/JGVD5YYRsVVijOHPZI6YKTUvbR4e0hgV9B0S6rbI=
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20003/go.mod h1:mvM05r93HiefwoaxQTaYiJxtJAhTebwQtU1Xh/J+Okk=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
